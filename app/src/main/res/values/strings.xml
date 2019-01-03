@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">healthApp</string>
+    <string name="splash_activity_title_wait">Wait a moment please</string>
+    <string name="profile_activity_name_text">Name</string>
+    <string name="profile_activity_surname_text">Surname</string>
+    <string name="profile_activity_age_text">Age</string>
+    <string name="profile_activity_weight_text">Weight</string>
+    <string name="profile_activity_height_text">Height</string>
+    <string name="common_profile_title">My Profile</string>
+    <string name="profile_actitivty_female">Female</string>
+    <string name="profile_actitivty_male">Male</string>
+
+    common_profile_title
 </resources>

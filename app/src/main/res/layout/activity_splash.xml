@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="Wait a moment please"
+        android:text="@string/splash_activity_title_wait"
         android:textColor="@color/science_blue_2"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +28,7 @@
         android:src="@drawable/logo_test"
         app:layout_constraintLeft_toLeftOf="@id/splash_title_wait"
         app:layout_constraintRight_toRightOf="@id/splash_title_wait"
-        app:layout_constraintTop_toBottomOf="@id/splash_title_wait" />
+        app:layout_constraintTop_toBottomOf="@id/splash_title_wait"
+        tools:ignore="ContentDescription" />
 
 </android.support.constraint.ConstraintLayout>
