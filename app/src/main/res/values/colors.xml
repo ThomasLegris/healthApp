@@ -3,4 +3,45 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="battleship_grey">#72747c</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_two">#f9f9f9</color>
+    <color name="white_three">#dddddd</color>
+    <color name="brick">#cc2929</color>
+    <color name="slate_grey">#565963</color>
+    <color name="black_10">#1a000000</color>
+    <color name="black_30">#50000000</color>
+    <color name="black_50">#7f000000</color>
+    <color name="black_two">#010101</color>
+    <color name="slate_grey_77">#99565963</color>
+    <color name="slate_grey_50">#7f565963</color>
+    <color name="slate_grey_20">#33565963</color>
+    <color name="transdev_red">#ff0000</color>
+    <color name="light_red">#ff8e8c</color>
+    <color name="orangey_red">#ff3333</color>
+    <color name="warm_grey">#999999</color>
+    <color name="warm_grey_10">#1a999999</color>
+    <color name="warm_grey_50">#80999999</color>
+    <color name="blurple">#553dcb</color>
+    <color name="light_gray">#e9e9e9</color>
+    <color name="danube">#7AAADC</color>
+    <color name="danube_2">#7FADDD</color>
+    <color name="picton_blue">#33B5E5</color>
+    <color name="cerulean">#00B6F1</color>
+    <color name="dodger_blue">#5588FF</color>
+    <color name="lochmara">#0088CE</color>
+    <color name="science_blue">#005BBB</color>
+    <color name="science_blue_2">#005DBC</color>
+    <color name="endeavour">#004C9D</color>
+    <color name="tory_blue">#0C4BA1</color>
+    <color name="tory_blue_2">#0C4CA2</color>
+    <color name="chambray">#3F5E94</color>
+    <color name="chambray_2">#3B5998</color>
+    <color name="congress_blue">#073A8C</color>
+    <color name="midnight_blue">#003770</color>
+    <color name="catalina_blue">#09357A</color>
+    <color name="resolution_blue">#001A70</color>
 </resources>
