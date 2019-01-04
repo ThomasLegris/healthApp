@@ -9,6 +9,9 @@
     <string name="common_profile_title">My Profile</string>
     <string name="profile_actitivty_female">Female</string>
     <string name="profile_actitivty_male">Male</string>
+    <string name="profile_activity_select_help">help</string>
+    <string name="dialog_help_activity_close">close</string>
+    <string name="profile_activity_energy_need">Calculate your energy needs</string>
 
     common_profile_title
 </resources>

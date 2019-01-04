@@ -105,9 +105,23 @@
         android:text="Select you activity"
         app:layout_constraintTop_toBottomOf="@+id/profile_sex_radio_group" />
 
+
+
+
+
+    <TextView
+        android:id="@+id/profile_activity_select_help_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_activity_select_help"
+        android:textColor="@color/dodger_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_activity_select_textview"
+        app:layout_constraintRight_toRightOf="@id/profile_activity_radio_group"
+        app:layout_constraintTop_toTopOf="@+id/profile_activity_select_textview" />
+
     <RadioGroup
         android:id="@+id/profile_activity_radio_group"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
@@ -137,6 +151,26 @@
             android:text="Intence" />
 
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/profile_activity_need_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/profile_activity_energy_need"
+        app:layout_constraintTop_toBottomOf="@id/profile_activity_radio_group" />
+
+    <Button
+        android:id="@+id/profile_activity_need_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Go"
+        app:layout_constraintBottom_toBottomOf="@id/profile_activity_need_textview"
+        app:layout_constraintLeft_toRightOf="@id/profile_activity_need_textview"
+        app:layout_constraintTop_toTopOf="@id/profile_activity_need_textview" />
+
+
 
 
 </android.support.constraint.ConstraintLayout>
