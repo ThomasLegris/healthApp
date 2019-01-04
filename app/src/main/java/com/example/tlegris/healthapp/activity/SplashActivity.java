@@ -14,7 +14,7 @@ import java.util.TimerTask;
 public class SplashActivity extends AppCompatActivity {
     private Timer timer;
 
-    private static final long SPLASH_DURATION = 5000;
+    private static final long SPLASH_DURATION = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void openNextActivity() {
-        Intent intent = new Intent(this, ProfileActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 }

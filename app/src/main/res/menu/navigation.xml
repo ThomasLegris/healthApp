@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/common_profile_title"/>
+
+    <item
+        android:id="@+id/navigation_product_info"
+        android:icon="@drawable/ic_product_info"
+        android:title="@string/common_product_info_title"/>
+
+    <item
+        android:id="@+id/navigation_meal_info"
+        android:icon="@drawable/ic_meal"
+        android:title="@string/common_meal_info_title"/>
+</menu>

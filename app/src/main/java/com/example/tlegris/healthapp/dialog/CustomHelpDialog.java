@@ -1,7 +1,7 @@
 package com.example.tlegris.healthapp.dialog;
 
 
-import android.app.Activity;
+import android.app.Application;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +13,7 @@ import com.example.tlegris.healthapp.R;
 public class CustomHelpDialog extends Dialog {
 
 
-    public CustomHelpDialog(Activity a) {
+    public CustomHelpDialog(Application a) {
         super(a);
         // TODO Auto-generated constructor stub
     }
