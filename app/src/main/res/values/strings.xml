@@ -11,9 +11,9 @@
     <string name="common_meal_info_title">My Meal Infos</string>
     <string name="profile_actitivty_female">Female</string>
     <string name="profile_actitivty_male">Male</string>
-    <string name="profile_activity_select_help">help</string>
-    <string name="dialog_help_activity_close">close</string>
+    <string name="profile_activity_select_help">Help</string>
+    <string name="dialog_help_activity_close">Close</string>
     <string name="profile_activity_energy_need">Calculate your energy needs</string>
+    <string name="profile_activity_help_dialog_text">A little help to understand who you are : \n\nNull : You are a geek bro! Sitting at home all the time, please wake up!\nModerate : You are walking 1–2 hours each day \nHigh : Well done, you are making sports 2 to 3 times each week \nVery High : Keep Calm Ngolo Kante</string>
 
-    common_profile_title
 </resources>

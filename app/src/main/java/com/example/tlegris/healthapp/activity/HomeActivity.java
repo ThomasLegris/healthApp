@@ -1,15 +1,18 @@
 package com.example.tlegris.healthapp.activity;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+
+import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -23,7 +26,7 @@ import java.util.Objects;
 @SuppressLint("Registered")
 public class HomeActivity extends AppCompatActivity {
 
-    FragmentManager mFragmentManager;
+    Fragment mProfileFragment;
 
     @SuppressLint("ResourceType")
     @Override
@@ -33,9 +36,25 @@ public class HomeActivity extends AppCompatActivity {
         setupToolbar();
         BottomNavigationView bottomNavigation = (BottomNavigationView) findViewById(R.id.home_navigation_view);
         setupBottomToolbar(bottomNavigation);
+        getProfileInformation();
+    }
+
+    private void getProfileInformation() {
+        SharedPreferences sharedPreferences = getSharedPreferences("health-app", MODE_PRIVATE);
+        String name = sharedPreferences.getString("name", null);
+        Bundle bundle = new Bundle();
+        mProfileFragment = ProfileFragment.newInstance();
+        if (name == null) {
+            bundle.putBoolean("haveInfos", false);
+            mProfileFragment.setArguments(bundle);
+        } else {
+            Toast.makeText(this, "Bienvenue " + name.toString(), Toast.LENGTH_SHORT).show();
+            bundle.putBoolean("haveInfos", true);
+            mProfileFragment.setArguments(bundle);
+        }
+        showFragment(mProfileFragment);
 
         //add the first fragment that we want _ one time
-        showFragment(ProfileFragment.newInstance());
     }
 
     private void setupToolbar() {
@@ -63,6 +82,14 @@ public class HomeActivity extends AppCompatActivity {
                         fragment = MealFragment.newInstance();
                         break;
                 }
+                Bundle bundle = new Bundle();
+                if (getSharedPreferences("health-app", MODE_PRIVATE).getString("name", null) == null) {
+                    bundle.putBoolean("haveInfos", false);
+                } else {
+                    bundle.putBoolean("haveInfos", true);
+                }
+                fragment.setArguments(bundle);
+
                 showFragment(fragment);
                 return true;
             }

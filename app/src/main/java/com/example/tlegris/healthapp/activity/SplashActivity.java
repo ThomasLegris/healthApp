@@ -1,9 +1,14 @@
 package com.example.tlegris.healthapp.activity;
 
 import android.content.Intent;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Fade;
+import android.transition.Slide;
+import android.transition.TransitionInflater;
 
 import com.example.tlegris.healthapp.R;
 
@@ -14,7 +19,7 @@ import java.util.TimerTask;
 public class SplashActivity extends AppCompatActivity {
     private Timer timer;
 
-    private static final long SPLASH_DURATION = 3000;
+    private static final long SPLASH_DURATION = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +56,6 @@ public class SplashActivity extends AppCompatActivity {
 
     private void openNextActivity() {
         Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
+        Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(this, android.R.anim.fade_in, android.R.anim.fade_out).toBundle();
+        startActivity(intent, bundle);    }
 }
