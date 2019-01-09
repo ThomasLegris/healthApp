@@ -1,4 +1,4 @@
-package com.example.tlegris.healthapp.fragment;
+package com.example.tlegris.healthapp.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

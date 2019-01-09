@@ -1,4 +1,4 @@
-package com.example.tlegris.healthapp.activity;
+package com.example.tlegris.healthapp.ui.activity;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
@@ -11,15 +11,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
-import android.transition.Slide;
-import android.transition.TransitionInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.tlegris.healthapp.R;
-import com.example.tlegris.healthapp.fragment.MealFragment;
-import com.example.tlegris.healthapp.fragment.ProductFragment;
-import com.example.tlegris.healthapp.fragment.ProfileFragment;
+import com.example.tlegris.healthapp.ui.fragment.MealFragment;
+import com.example.tlegris.healthapp.ui.fragment.ProductFragment;
+import com.example.tlegris.healthapp.ui.fragment.ProfileFragment;
 
 import java.util.Objects;
 

@@ -1,14 +1,10 @@
-package com.example.tlegris.healthapp.activity;
+package com.example.tlegris.healthapp.ui.activity;
 
 import android.content.Intent;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.transition.Explode;
-import android.transition.Fade;
-import android.transition.Slide;
-import android.transition.TransitionInflater;
 
 import com.example.tlegris.healthapp.R;
 

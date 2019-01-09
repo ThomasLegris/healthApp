@@ -1,4 +1,4 @@
-package com.example.tlegris.healthapp.dialog;
+package com.example.tlegris.healthapp.ui.dialog;
 
 
 import android.app.Application;
